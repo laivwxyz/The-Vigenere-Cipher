@@ -34,3 +34,4 @@ def original_text(cipher_text, key):
 if __name__ == "_main_":
     message = input("Message(all uppercase & no spaces): ")
     keyword = input('\033[34m' +"Keyword(all uppercase & no spaces): ")
+    key = generate_key(message, keyword)
