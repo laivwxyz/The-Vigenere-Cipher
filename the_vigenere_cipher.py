@@ -30,4 +30,6 @@ def original_text(cipher_text, key):
         orig_text.append(chr(x))
     return("" . join(orig_text))
 
-# FUnction asks the user for the plaintext and print out the output of the program 
+# Function asks the user for the plaintext and print out the output of the program 
+if __name__ == "_main_":
+    message = input("Message(all uppercase & no spaces): ")
