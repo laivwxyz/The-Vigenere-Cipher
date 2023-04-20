@@ -13,5 +13,13 @@ def generate_key(message, key):
     return("" . join(key))
 
 # With the help of the key, the function returns the encrypted text generated
+def cipher_text(message, key):
+    cipher_text = []
+    for i in range(len(message)):
+        x = (ord(message[i]) + ord(key[i])) % 26
+        x += ord('A')
+        cipher_text.append(chr(x))
+    return("" . join(cipher_text))
+
 # Use the decryption function to decrypt the encrypted text and returns the original text
 # FUnction asks the user for the plaintext and print out the output of the program 
