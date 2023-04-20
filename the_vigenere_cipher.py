@@ -2,6 +2,13 @@
 # Assignment 2
 # Problem 3 - The Vigenere Cipher
 
+# Adding a design in the program 
+from termcolor import colored
+from pyfiglet import Figlet
+
+f = Figlet(font = 'standard')
+print(colored(f.renderText('Problem 2 - The Vigenere Cipher'), 'red'))
+
 # Function generates key in a continuous process until it's length isn't equal to the length of original text
 def generate_key(message, key):
     key = list(key)
