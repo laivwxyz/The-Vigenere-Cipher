@@ -7,6 +7,10 @@ def generate_key(message, key):
     key = list(key)
     if len(message) == len(key):
         return(key)
+    else:
+        for i in range(len(message) - len(key)):
+            key.append(key[i % len(key)])
+    return("" . join(key))
 
 # With the help of the key, the function returns the encrypted text generated
 # Use the decryption function to decrypt the encrypted text and returns the original text
