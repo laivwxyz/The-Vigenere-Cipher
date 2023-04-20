@@ -31,7 +31,9 @@ def original_text(cipher_text, key):
     return("" . join(orig_text))
 
 # Function asks the user for the plaintext and print out the output of the program 
-if __name__ == "_main_":
+if __name__ == "__main__":
     message = input("Message(all uppercase & no spaces): ")
-    keyword = input('\033[34m' +"Keyword(all uppercase & no spaces): ")
+    keyword = input("Keyword(all uppercase & no spaces): ")
     key = generate_key(message, keyword)
+    cipher_text = cipher_text(message, key)
+    print("Ciphertext: ", cipher_text)
