@@ -33,3 +33,4 @@ def original_text(cipher_text, key):
 # Function asks the user for the plaintext and print out the output of the program 
 if __name__ == "_main_":
     message = input("Message(all uppercase & no spaces): ")
+    keyword = input('\033[34m' +"Keyword(all uppercase & no spaces): ")
