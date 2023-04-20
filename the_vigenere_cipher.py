@@ -22,4 +22,12 @@ def cipher_text(message, key):
     return("" . join(cipher_text))
 
 # Use the decryption function to decrypt the encrypted text and returns the original text
+def original_text(cipher_text, key):
+    orig_text = []
+    for i in range(len(cipher_text)):
+        x = (ord(cipher_text[i]) - ord(key[i]) + 26) % 26
+        x += ord('A')
+        orig_text.append(chr(x))
+    return("" . join(orig_text))
+
 # FUnction asks the user for the plaintext and print out the output of the program 
